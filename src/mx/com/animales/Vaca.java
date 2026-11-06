@@ -13,6 +13,8 @@ public class Vaca extends Animal implements Movible{
 
     @Override
     public void moverse() {
+        System.out.println("Mueve sus patas de izquierda a derecha");
+        System.out.println("Da una vuelta y termina con un Muuu!");
 
     }
 }

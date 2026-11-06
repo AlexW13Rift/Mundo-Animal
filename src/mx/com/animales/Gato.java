@@ -13,6 +13,8 @@ public class Gato extends Animal implements Movible{
 
     @Override
     public void moverse() {
+        System.out.println("El gato comienza a moverse");
+        System.out.println("Mueve la cola");
 
     }
 }
