@@ -1,79 +1,112 @@
-# Mundo-Animal
 
-- Descripción
+# 🐾 Mundo Animal | Java POO
 
-Proyecto desarrollado en Java como parte del bootcamp de Generation México, con el objetivo de aplicar los fundamentos de la Programación Orientada a Objetos (POO).
+<div align="center">
 
-El programa representa diferentes animales, mostrando su información, sonidos y movimientos mediante el uso de herencia, polimorfismo, clases abstractas e interfaces.
+### Proyecto de Programación Orientada a Objetos
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![POO](https://img.shields.io/badge/POO-007396?style=for-the-badge)
+![Generation](https://img.shields.io/badge/Generation-México-4CAF50?style=for-the-badge)
+
+**Herencia · Polimorfismo · Encapsulamiento · Clases abstractas · Interfaces**
+
+</div>
+
+---
+
+## 📖 Descripción
+
+**Mundo Animal** es un proyecto desarrollado en Java como parte del bootcamp de **Generation México**.
+
+Su objetivo es aplicar los fundamentos de la Programación Orientada a Objetos (POO) mediante la representación de distintos animales, sus características, sonidos y movimientos.
+
+Cada animal tiene comportamientos propios, implementados mediante herencia, sobrescritura de métodos e interfaces.
 
 
-- Funcionamiento
+## 📂 Estructura del proyecto
 
-Se crean objetos de tipo Perro, Gato y Vaca.
+```text
+MundoAnimal/
+├── src/
+│   └── mx/com/animales/
+│       ├── Animal.java
+│       ├── Perro.java
+│       ├── Gato.java
+│       ├── Vaca.java
+│       ├── Movible.java
+│       └── Main.java
+└── README.md
+```
 
-Los objetos se almacenan en un arreglo Animal[].
 
-Se recorre el arreglo utilizando un ciclo for.
 
-Cada animal muestra su nombre, edad y sonido.
+## 🚀 Cómo ejecutar el proyecto
 
-Mediante la interfaz Movible, cada animal muestra su movimiento.
+### 1. Clonar el repositorio
 
-- Cómo ejecutar el proyecto
-
-Clonar el repositorio:
-
+```bash
 git clone https://github.com/AlexW13Rift/Mundo-Animal.git
+```
 
-Abrir el proyecto en IntelliJ IDEA.
+### 2. Abrir el proyecto
 
-Verificar que esté configurado el JDK de Java.
+Abre la carpeta del proyecto en **IntelliJ IDEA**.
 
-Abrir el archivo Main.java.
+### 3. Configurar Java
 
-Ejecutar el método main().
+Verifica que tengas instalado y configurado un JDK compatible.
 
-💻 Ejemplo de salida
+### 4. Ejecutar
 
+Abre `Main.java` y ejecuta el método `main()`.
+
+##  Ejemplo de salida
+
+```text
 Nombre: Max
 Edad: 3
 Guau, guau!
 El perro corre
---------------------
+----------------------------
+
 Nombre: Luna
 Edad: 2
 Miau!
 El gato mueve la cola
---------------------
+----------------------------
+
 Nombre: Lola
 Edad: 5
 La vaca canta
 La vaca comienza a bailar Payaso de Rodeo
---------------------
+----------------------------
+```
 
-La salida puede variar según los sonidos y movimientos definidos en cada clase.
+> **Nota:** Los sonidos y movimientos pueden variar según la implementación de cada clase.
 
-- Preguntas de reflexión
+## 🧠 Preguntas de reflexión
 
-1. ¿Qué se reutiliza al heredar de Animal?
+### 1. ¿Qué se reutiliza al heredar de Animal?
 
-Se reutilizan los atributos nombre y edad, así como el método mostrarInformacion().
+Se reutilizan los atributos `nombre` y `edad`, así como el método `mostrarInformacion()`.
 
-2. ¿Qué hace super(nombre, edad)?
+### 2. ¿Qué hace super(nombre, edad)?
 
-Llama al constructor de la clase padre Animal para inicializar los atributos nombre y edad del objeto.
+Llama al constructor de la clase padre `Animal` para inicializar los atributos `nombre` y `edad`.
 
-3. ¿Para qué sirve @Override?
+### 3. ¿Para qué sirve @Override?
 
-Sirve para indicar que estamos sobrescribiendo un método heredado de una clase padre.
+Indica que estamos sobrescribiendo un método heredado o implementando un método declarado en una interfaz.
 
-4. ¿Por qué el mismo método hacerSonido() produce resultados distintos?
+### 4. ¿Por qué el mismo método hacerSonido() produce resultados distintos?
 
-Porque con el polimorfismo cada clase implementa su propia versión del método hacerSonido(), por lo que Java ejecuta el comportamiento correspondiente al objeto.
+Porque utilizamos **polimorfismo**. Cada clase implementa su propia versión de `hacerSonido()` y Java ejecuta el comportamiento correspondiente al objeto real.
 
-5. ¿Cuál es la diferencia entre una clase abstracta y una interfaz?
+### 5. ¿Cuál es la diferencia entre una clase abstracta y una interfaz?
 
-Una clase abstracta puede contener atributos, constructores y métodos implementados o abstractos. Una interfaz define un contrato de comportamiento que las clases implementan.
+Una **clase abstracta** puede contener atributos, constructores y métodos concretos o abstractos.
 
-En este proyecto, Animal representa las características comunes de los animales, mientras que Movible establece que deben implementar el método moverse().
+Una **interfaz** define un contrato de comportamiento que las clases deben cumplir al implementarla.
 
+En este proyecto, `Animal` representa las características comunes de los animales, mientras que `Movible` define su capacidad de movimiento.
