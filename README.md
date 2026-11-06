@@ -20,6 +20,7 @@ MundoAnimal/
 │       ├── Perro.java
 │       ├── Gato.java
 │       ├── Vaca.java
+│       ├── Caballo.java
 │       ├── Movible.java
 │       └── Main.java
 └── README.md
