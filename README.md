@@ -1,19 +1,5 @@
 
-# 🐾 Mundo Animal | Java POO
-
-<div align="center">
-
-### Proyecto de Programación Orientada a Objetos
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![POO](https://img.shields.io/badge/POO-007396?style=for-the-badge)
-![Generation](https://img.shields.io/badge/Generation-México-4CAF50?style=for-the-badge)
-
-**Herencia · Polimorfismo · Encapsulamiento · Clases abstractas · Interfaces**
-
-</div>
-
----
+# 🐾 Mundo Animal 
 
 ## 📖 Descripción
 
